@@ -4,10 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>Table</title>
 </head>
 <body>
-   
+   <div class="container">
+    <h1 class=" h1 p-3">Movies catalog</h1>
+        <section class="row pt-3 pb-3">
+            <div class="col-4">
+                <form class="bg-white">
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label"></label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="ave">
+                      </div>
+                      <div class="mb-3">
+                        <label for="formGroupExampleInput2" class="form-label col-3"></label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="5">
+                      </div>
+
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>All</option>
+                        <option value="1">Qasoskorlar</option>
+                        <option value="2">Temir odam</option>
+                        <option value="3">Xalk</option>
+                      </select>
+
+                      <select class="form-select mt-3" aria-label="Default select example">
+                        <option selected>Rating</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+
+                      <button type="button" class="btn btn-primary mt-3 col-12">Search</button>
+                </form>
+
+                <div class="mt-3">
+                    <h2>Bookmarket movies</h2>
+
+                    <ul class="list-group">
+                      <li class="list-group-item"><strong>Avengers:Infinity War</strong><br>
+                          <button type="button" class="btn btn-danger">Remove</button></li>
+
+                      <li class="list-group-item"><strong> The Avengers</strong><br>
+                          <button type="button" class="btn btn-danger">Remove</button></li>
+
+                      <li class="list-group-item"><strong> 2 years a slave</strong><br>
+                          <button type="button" class="btn btn-danger">Remove</button></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col">
+                <p>
+                   <strong> Search results:39</strong>
+                </p>
+                <p class="p-3 bg-info border-5 rounded">
+                    Use the form on the left to search for a movia
+                </p>
+
+                <div>
+                    <div class="d-flex">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./images/kartinki-mstiteli-20.jpg" class="card-img-top" alt="...">
+                            <div class="col-12 card-body">
+                              <h5 class="card-title"><strong>Avengers:Infinity War</strong></h5>
+                              <p class="card-text">&#128197 2018</p>
+                              <p class="card-text">&#11088 8.7</p>
+                              <a href="#" class="btn btn-primary">Watch Trailer</a>
+                              <a href="#" class="btn btn-primary">More info</a>
+                              <a href="#" class="btn btn-primary mt-3">Bookmark</a>
+                            </div>
+                          </div>
+
+
+                        <div class="card ms-5" style="width: 18rem;">
+                            <img src="./images/amazing-iron-man-2.jpg" class="card-img-top" alt="...">
+                            <div class="col-12 card-body">
+                              <h5 class="card-title"><strong>Avengers:Infinity War</strong></h5>
+                              <p class="card-text">&#128197 2012</p>
+                              <p class="card-text">&#11088 8.1</p>
+                              <a href="#" class="btn btn-primary">Watch Trailer</a>
+                              <a href="#" class="btn btn-primary">More info</a>
+                              <a href="#" class="btn btn-primary mt-3">Bookmark</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center mt-3" role="group" aria-label="one group">
+                            <button type="button" class="btn border bg-primary">1</button>
+                            <button type="button" class="btn border bg-light">2</button>
+                            <button type="button" class="btn border bg-light">3</button>
+                            <button type="button" class="btn border bg-light">4</button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+   </div>
 </body>
 </html>
